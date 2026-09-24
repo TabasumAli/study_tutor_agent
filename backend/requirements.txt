@@ -3,6 +3,6 @@ uvicorn[standard]==0.30.6
 crewai==1.14.3
 crewai-tools==1.14.3
 langchain-groq==0.2.1
-langchain==0.3.7
-pydantic==2.9.2
+langchain>=0.3.7,<0.4.0
+pydantic>=2.11.9,<3.0.0
 python-dotenv==1.0.1
