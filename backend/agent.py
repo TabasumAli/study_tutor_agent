@@ -10,12 +10,11 @@ from memory import format_history
 
 
 def build_llm(api_key: str) -> LLM:
-    """Groq LLM wrapper compatible with CrewAI (litellm under the hood)."""
-    os.environ["GROQ_API_KEY"] = api_key
     return LLM(
-        model="groq/openai/gpt-oss-120b",
-        temperature=0.4,
+        model="openai/gpt-oss-120b",  # Native OpenAI prefix
+        base_url="https://api.groq.com/openai/v1",  # Groq's OpenAI-compatible endpoint
         api_key=api_key,
+        temperature=0.4,
     )
 
 
