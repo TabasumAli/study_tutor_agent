@@ -2,6 +2,7 @@ fastapi==0.115.0
 uvicorn[standard]>=0.31.1,<0.32.0
 crewai==1.14.3
 crewai-tools==1.14.3
+litellm
 langchain-groq==0.2.1
 langchain>=0.3.7,<0.4.0
 pydantic>=2.11.9,<3.0.0
